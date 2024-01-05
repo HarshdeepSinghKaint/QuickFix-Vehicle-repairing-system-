@@ -26,7 +26,7 @@ def mechanicsclick_view(request):
     return render(request,'vehicle/mechanicsclick.html')
 
 
-#for showing signup/login button for ADMIN(by sumit)
+#for showing signup/login button for ADMIN
 def adminclick_view(request):
     if request.user.is_authenticated:
         return HttpResponseRedirect('afterlogin')
@@ -73,7 +73,7 @@ def mechanic_signup_view(request):
     return render(request,'vehicle/mechanicsignup.html',context=mydict)
 
 
-#for checking user customer, mechanic or admin(by sumit)
+#for checking user customer, mechanic or admin
 def is_customer(user):
     return user.groups.filter(name='CUSTOMER').exists()
 def is_mechanic(user):

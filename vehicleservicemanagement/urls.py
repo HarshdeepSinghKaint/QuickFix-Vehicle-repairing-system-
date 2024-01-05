@@ -90,7 +90,8 @@ urlpatterns = [
     path('customer-view-approved-request-invoice',views.customer_view_approved_request_invoice_view,name='customer-view-approved-request-invoice'),
 
     path('afterlogin', views.afterlogin_view,name='afterlogin'),
-    path('logout', LogoutView.as_view(template_name='vehicle/index.html'),name='logout'),
+    path('logout/', LogoutView.as_view(template_name='vehicle/index.html'),name='logout'),
+    
 
     path('aboutus', views.aboutus_view),
     path('contactus', views.contactus_view),

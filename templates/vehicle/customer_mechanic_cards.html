@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
     .card {
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
       max-width: 300px;
       margin: auto;
       text-align: center;
@@ -15,7 +15,7 @@
 
     .title {
       color: grey;
-      font-size: 18px;
+      font-size: 24px;
     }
 
     button {
@@ -39,8 +39,8 @@
     .grid-container {
       display: grid;
       grid-template-columns: auto auto auto;
-      padding: 60px;
-      margin-left:150px;
+      padding: 20px;
+      margin-left:100px;
     }
 
     a:link {
@@ -54,13 +54,11 @@
 </head>
 
 <body>
-
-
-
-  <div class="grid-container">
+  
+<div class="grid-container">
     <div class="grid-item">
       <div class="card">
-        <img src="{% static "images/admin.png" %}" alt="John" style="width:100%">
+        <img src="{% static "images/admin.jpg" %}" alt="Harsh" style="width:100%">
         <p class="title">Customer</p>
         <p><button><a href="/customerclick">View</a></button></p>
       </div>
@@ -69,7 +67,7 @@
 
     <div class="grid-item">
       <div class="card">
-        <img src="{% static "images/mechanic.png" %}" alt="John" style="width:100%">
+        <img src="{% static "images/mechanic.jpg" %}" alt="" style="width:100%">
         <p class="title">Mechanic</p>
         <p><button><a href="/mechanicsclick">View</a></button></p>
       </div>

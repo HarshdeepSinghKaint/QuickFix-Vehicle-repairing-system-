@@ -27,30 +27,24 @@
 <body>
 
   {% include "vehicle/navbar.html" %}
-  <br><br>
-  <center>
-    <h3 class='alert alert-success' style="margin-bottom:0px;">About Us !</h3>
-  </center>
-  <div class="jumbotron" style="margin-bottom: 0px;margin-top: 0px;">
-    <h1 class="display-4">Hello Drivers</h1>
-    <p class="lead">A genuine solution to vehicle problems</p>
-    <hr class="my-4">
-    <p>Explore our Website.</p>
-    <p class="lead">
-      <a class="btn btn-primary btn-lg" href="/" role="button">HOME</a>
-    </p>
-  </div>
-  <marquee behavior="scroll" direction="left">
-   <img src="{% static "images/ferrari.png" %}" width="120" height="80" alt="ferrari" />
-    <img src="{% static "images/ford.png" %}" width="120" height="80" alt="ford" />
-   <img src="{% static "images/lambo.png" %}" width="120" height="80" alt="lambo" />
-   <img src="{% static "images/mahindra.png" %}" width="120" height="80" alt="mahindra" />
-   <img src="{% static "images/tvs.png" %}" width="120" height="80" alt="tvs" />
-   <img src="{% static "images/tata.png" %}" width="120" height="80" alt="tata" />
-   <img src="{% static "images/hero.png" %}" width="120" height="80" alt="hero" />
-   <img src="{% static "images/rolls.png" %}" width="120" height="80" alt="rolls" />
-   <img src="{% static "images/suzuki.png" %}" width="120" height="80" alt="suzuki" />
- </marquee>
+
+  <div class="container mt-4">
+    <div class="text-center">
+      <br>
+        <h3 class="alert alert-success mb-0">About Us!</h3>
+    </div>
+
+    <div class="jumbotron mt-4">
+        <h1 class="display-4">Hello, Drivers!</h1>
+        <p class="lead">Welcome to QuickFix, your premier destination for modernizing the vehicle repair experience. <br> At QuickFix, we believe that the auto repair industry deserves a technological transformation to enhance efficiency, communication, and customer satisfaction. Our platform is designed to revolutionize how auto repair shops operate and how customers experience vehicle maintenance.</p>
+        <hr class="my-4">
+        <p>Explore our website.</p>
+        <p class="lead">
+            <a class="btn btn-primary btn-lg" href="/" role="button">Home</a>
+        </p>
+    </div>
+</div>
+ 
   {% include "vehicle/footer.html" %}
 </body>
 
